@@ -121,7 +121,6 @@ public class TreeTSP {
 				return;
 			}
 			
-			//int count = 0;
 			int sum = 0; 
 			float average = 0;
 			
@@ -164,20 +163,20 @@ public class TreeTSP {
 	}
 	
 	/**
-	 * °æ·Î¿¡ ´ëÇÑ ÃÑ °Å¸® °è»ê (calculate total distance)
+	 * ê²½ë¡œì— ëŒ€í•œ ì´ ê±°ë¦¬ ê³„ì‚° (calculate total distance)
 	 * @param path
 	 * @return
 	 */
 	
 	/**
-	 * Ã£¾ÆÁø °æ·Î ¾ò±â
-	 * @return °æ·Î ¹è¿­
+	 * ì°¾ì•„ì§„ ê²½ë¡œ ì–»ê¸°
+	 * @return ê²½ë¡œ ë°°ì—´
 	 */
 	
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		// °Å¸® ÆÄÀÏ ·Îµù
+		// ê±°ë¦¬ íŒŒì¼ ë¡œë”©
 				System.out.println("Loading File...");
 				int nOfCity = 100;
 				int [][] distances = new int[nOfCity][];
@@ -252,7 +251,7 @@ public class TreeTSP {
 				dis.close();
 				*/
 				
-				// TSP°´Ã¼ »ı¼º ¹× ÃÖÀû °æ·Î Å½»ö
+				// TSPê°ì²´ ìƒì„± ë° ìµœì  ê²½ë¡œ íƒìƒ‰
 				System.out.println("Find Shortest Path...");
 				
 				TreeTSP t = new TreeTSP();
@@ -260,7 +259,7 @@ public class TreeTSP {
 				
 				System.out.println(t.possibleSolutions.size() + "*****");
 				
-				// Á¡¼ö¿Í °æ·Î¸¦ ÆÄÀÏ·Î Ãâ·Â
+				// ì ìˆ˜ì™€ ê²½ë¡œë¥¼ íŒŒì¼ë¡œ ì¶œë ¥
 				System.out.println("Write Result...\n");
 				File resultFile = new File("result.txt");
 				if(!resultFile.exists()) resultFile.createNewFile();
