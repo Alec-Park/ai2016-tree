@@ -2,7 +2,6 @@
 import java.util.ArrayList;
 
 public class Cities {
-
     // Holds our cities
     private static ArrayList destinationCities = new ArrayList<City>();
 
