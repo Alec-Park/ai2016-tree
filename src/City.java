@@ -6,7 +6,7 @@
 public class City {
     int x;
     //boolean isVisit;
-    public int[] distances = new int[100];
+    public int[] distances = new int[101];
     
     // Constructs a randomly placed city
     public City(){
